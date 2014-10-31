@@ -1,8 +1,10 @@
-age = rand(111)
+age = rand(111) # good catch, on the edge case
 puts "Age is " + age.to_s + "."
 
 if age <= 1
   desc = "a baby"
+# love that your are using the between method,
+# but do we need to check the lower bound?
 elsif age.between?(2,9)
   desc = "a child"
 elsif age.between?(10,12)
